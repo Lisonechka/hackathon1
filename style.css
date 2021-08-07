@@ -50,7 +50,6 @@
   background: #e7bff3;
 }
 
-
 .container-fluid {
   text-align: center;
 }
@@ -75,13 +74,17 @@
 }
 
  #gallery {
-  width: 75%;
-  margin-left: 350px;
-  /* position: fixed; */
-  /* z-index: 999;
-  background-color: whitesmoke; */ 
+  padding: 1em;
+  width: 76%;
+  margin-left: 380px;
+  column-count: 4;
+  background-color: rgb(250, 217, 247);
   display: none;
 } 
+img {
+  width: 100%;
+  margin-bottom: 1em;
+}
 
 .mainText {
   margin-right: 50%;
@@ -119,8 +122,5 @@
   text-align: center;
 }
 
-/* #gallery {
-  width: 80%;
-  display: none;
-} */
+
 

@@ -18,13 +18,7 @@ $(document).ready(function () {
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
         $(`#content`).hide();
         $(`#gallery`).show();
+        
     });
 });
 
-// function viewGallery(){
-//     document.getElementById("gallery").style.display = "block";
-//   };
-
-//   function closeGallery(){
-//     document.getElementById("gallery").style.display = "none";
-//   };
