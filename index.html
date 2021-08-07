@@ -27,83 +27,201 @@
 			<div class="sidebar-header">
 				<h3>Invitation constructor</h3>
 			</div>
-	
-			<ul class="list-unstyled components">
-				<li class="active">
-					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-					<ul class="collapse list-unstyled" id="homeSubmenu">
-						<li>
-							<a href="#">Home 1</a>
-						</li>
-						<li>
-							<a href="#">Home 2</a>
-						</li>
-						<li>
-							<a href="#">Home 3</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">About</a>
-					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-					<ul class="collapse list-unstyled" id="pageSubmenu">
-						<li>
-							<a href="#">Page 1</a>
-						</li>
-						<li>
-							<a href="#">Page 2</a>
-						</li>
-						<li>
-							<a href="#">Page 3</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Portfolio</a>
-				</li>
-				<li>
-					<a href="#">Contact</a>
-				</li>
-			</ul>
+			<!--topics-->
+			<div id="myBtnContainer">
+				<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+				<button class="btn" onclick="filterSelection('wedding')"> Wedding</button>
+				<button class="btn" onclick="filterSelection('birthday')"> Birthday</button>
+				<button class="btn" onclick="filterSelection('party')"> Party</button>
+			</div>
+
 		</nav>
+			<!-- Gallery-->
+		<div id="gallery"> 
+	<ul class="row">
+
+   <li class="columnWedding">
+	 <div class="contentGallery">
+	   <img src="photos/wedding1.jpg" alt="wedding" id='wedding1' style="width:100%">
+	 </div>
+   </li>
+   <li class="columnWedding">
+	 <div class="contentGallery">
+	   <img src="photos/wedding2.jpg" alt="wedding" id='wedding2' style="width:100%">
+	 </div>
+   </li>
+   <li class="columnWedding">
+	   <div class="contentGallery">
+		 <img src="photos/wedding3.jpg" alt="wedding" id='wedding3' style="width:100%">
+	   </div>
+	 </li>
+   <li class="columnWedding">
+	   <div class="contentGallery">
+		 <img src="photos/wedding4.jpg" alt="wedding" id='wedding4' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnWedding">
+	   <div class="contentGallery">
+		 <img src="photos/wedding5.jpg" alt="wedding" id='wedding5' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnWedding">
+	   <div class="contentGallery">
+		 <img src="photos/wedding6.jpg" alt="wedding" id='wedding6' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnWedding">
+	   <div class="contentGallery">
+		 <img src="photos/wedding7.jpg" alt="wedding" id='wedding7' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnWedding">
+	   <div class="contentGallery">
+		 <img src="photos/wedding8.jpg" alt="wedding" id='wedding8' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnWedding">
+	   <div class="contentGallery">
+		 <img src="photos/wedding9.jpg" alt="wedding" id='wedding9' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnWedding">
+	   <div class="contentGallery">
+		 <img src="photos/wedding10.jpg" alt="wedding" id='wedding10' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnParty">
+	 <div class="contentGallery">
+	   <img src="photos/party1.jpg" alt="Green" id='party1' style="width:100%">
+	 </div>
+   </li>
+   <li class="columnParty">
+	   <div class="contentGallery">
+		 <img src="photos/party2.jpg" alt="Green" id='party2' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnParty">
+	   <div class="contentGallery">
+		 <img src="photos/party3.jpg" alt="Green" id='party3' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnParty">
+	   <div class="contentGallery">
+		 <img src="photos/party4.jpg" alt="Green" id='party4' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnParty">
+	   <div class="contentGallery">
+		 <img src="photos/party5.jpg" alt="Green" id='party5' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnParty">
+	   <div class="contentGallery">
+		 <img src="photos/party6.jpg" alt="Green" id='party6' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnParty">
+	   <div class="contentGallery">
+		 <img src="photos/party7.jpg" alt="Green" id='party7' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	 <div class="contentGallery">
+	   <img src="photos/birthday1.jpg" alt="White" id='birthday1' style="width:100%">
+	 </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday2.jpg" alt="White" id='birthday2' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday3.jpg" alt="White" id='birthday3' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday4.jpg" alt="White" id='birthday4' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday5.jpg" alt="White" id='birthday5' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday6.jpg" alt="White" id='birthday6' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday7.jpg" alt="White" id='birthday7' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday8.jpg" alt="White" id='birthday8' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday9.jpg" alt="White" id='birthday9' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday10.jpg" alt="White" id='birthday10' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday11.jpg" alt="White" id='birthday11' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday12.jpg" alt="White" id='birthday12' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday13.jpg" alt="White" id='birthday13' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday14.jpg" alt="White" id='birthday14' style="width:100%">
+	   </div>
+   </li>
+   <li class="columnBirthday">
+	   <div class="contentGallery">
+		 <img src="photos/birthday15.jpg" alt="White" id='birthday15' style="width:100%">
+	   </div>
+   </li>
+ </ul>
+        </div>
+  <!-- END Gallery -->
 	<!-- Content  -->
-    <div id="content">
+        <div id="content">
+			<div class="mainText"><h1>Let's invite everyone to your party!</h1></div>
+			<div class="simpleTexte"><h4>Create your own unique invitations. Add personality to your party...</h4></div>
+			<div class="container-fluid">
+				<button type="button" id="sidebarCollapse" class="btn btn-info">
+					<i class="fas fa-align-left"></i>
+					<span>Start create</span>
+				</button>
+				<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-align-justify"></i>
+				</button>
+			</div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+			</div>
 
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                    <span>Start create</span>
-                </button>
-                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-align-justify"></i>
-                </button>
-            </div>
-        </nav>
-
-	<div id="mainPage"><h2>SideBar на Bootstrap 4</h2>
-        <p>Лишь непосредственные участники технического прогресса, превозмогая сложившуюся непростую экономическую ситуацию, разоблачены. Высокое качество позиционных исследований создает предпосылки для форм воздействия. Сложно сказать, почему сторонники тоталитаризма в науке объявлены нарушающими общечеловеческие нормы этики и морали!</p>
-
-        <p>С учетом сложившейся международной обстановки, семантический разбор внешних противодействий представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Сложно сказать, почему ключевые особенности структуры проекта подвергнуты целой серии независимых исследований. Противоположная точка зрения подразумевает, что тщательные исследования конкурентов лишь добавляют фракционных разногласий и обнародованы.</p>
-
-        <div class="line"></div>
-
-        <h2>Заголовок 2</h2>
-        <p>Для современного мира современная методология разработки способствует подготовке и реализации новых предложений. Таким образом, высококачественный прототип будущего проекта создает необходимость включения в производственный план целого ряда внеочередных мероприятий с учетом комплекса вывода текущих активов. Равным образом, высокое качество позиционных исследований позволяет выполнить важные задания по разработке новых предложений. С другой стороны, повышение уровня гражданского сознания прекрасно подходит для реализации анализа существующих паттернов поведения. Противоположная точка зрения подразумевает, что сделанные на базе интернет-аналитики выводы и по сей день остаются уделом либералов, которые жаждут быть преданы социально-демократической анафеме. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: выбранный нами инновационный путь представляет собой интересный эксперимент проверки системы обучения кадров, соответствующей насущным потребностям.</p>
-
-        <p>Сложно сказать, почему акционеры крупнейших компаний формируют глобальную экономическую сеть и при этом - описаны максимально подробно. Внезапно, явные признаки победы институциализации, вне зависимости от их уровня, должны быть описаны максимально подробно. Прежде всего, повышение уровня гражданского сознания прекрасно подходит для реализации как самодостаточных, так и внешне зависимых концептуальных решений. Повседневная практика показывает, что сплоченность команды профессионалов, в своем классическом представлении, допускает внедрение новых предложений.</p>
-
-        <p>С учетом сложившейся международной обстановки, постоянный количественный рост и сфера нашей активности позволяет выполнить важные задания по разработке кластеризации усилий. Банальные, но неопровержимые выводы, а также стремящиеся вытеснить традиционное производство, нанотехнологии неоднозначны и будут превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
-
-        <div class="line"></div>
-
-        <h2>Заголовок 3</h2>
-        <p>Приятно, граждане, наблюдать, как тщательные исследования конкурентов подвергнуты целой серии независимых исследований. Следует отметить, что экономическая повестка сегодняшнего дня однозначно определяет каждого участника как способного принимать собственные решения касаемо приоретизации разума над эмоциями. В своем стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет функционально разнесены на независимые элементы!</p>
 	</div>
+	
 
-    </div>
-</div>
 
 <div class="overlay"></div>
 
