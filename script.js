@@ -22,3 +22,20 @@ $(document).ready(function () {
     });
 });
 
+const filterGallery = document.querySelectorAll('.item');
+
+document.querySelector('#myBtnContainer').addEventListener('click', event =>{
+    if(event.target.tagName != 'BUTTON') return false;
+
+    let filterClass = event.target.dataset['f'];
+
+    filterGallery.forEach( elem => {
+        
+        if(!elem.classList.contains(filterClass) && filterClass!=='all') {
+            elem.classList.add('hide');
+        } else {
+            elem.classList.remove('hide');
+        }
+
+    });
+}) 

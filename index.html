@@ -20,7 +20,7 @@
 	<div class="wrapper">
 		<!-- Sidebar  -->
 		<nav id="sidebar">
-			<div id="dismiss" onclick="closeGallery()">
+			<div id="dismiss">
 				<i class="far fa-arrow-alt-circle-left"></i>
 			</div>
 	
@@ -29,47 +29,47 @@
 			</div>
 			<!--topics-->
 			<div id="myBtnContainer">
-				<button class="btn active" onclick="filterSelection('all')"> Show all</button>
-				<button class="btn" onclick="filterSelection('wedding')"> Wedding</button>
-				<button class="btn" onclick="filterSelection('birthday')"> Birthday</button>
-				<button class="btn" onclick="filterSelection('party')"> Party</button>
+				<button data-f='all' class="btn"> Show all</button>
+				<button data-f='wedding'class="btn"> Wedding</button>
+				<button data-f='birthday'class="btn"> Birthday</button>
+				<button data-f='party'class="btn"> Party</button>
 			</div>
 
 		</nav>
 			<!-- Gallery-->
 		<div id="gallery"> 
-			<div class="item"><img src="photos/wedding1.jpg" alt="wedding" id='wedding1' ></div>
-			<div class="item"><img src="photos/wedding2.jpg" alt="wedding" id='wedding2' ></div>
-			<div class="item"><img src="photos/wedding3.jpg" alt="wedding" id='wedding3' ></div>
-			<div class="item"><img src="photos/wedding4.jpg" alt="wedding" id='wedding4' ></div>
-			<div class="item"><img src="photos/wedding5.jpg" alt="wedding" id='wedding5' ></div>
-			<div class="item"><img src="photos/wedding6.jpg" alt="wedding" id='wedding6' ></div>
-			<div class="item"><img src="photos/wedding7.jpg" alt="wedding" id='wedding7' ></div>
-			<div class="item"><img src="photos/wedding8.jpg" alt="wedding" id='wedding8' ></div>
-			<div class="item"><img src="photos/wedding9.jpg" alt="wedding" id='wedding9' ></div>
-			<div class="item"><img src="photos/wedding10.jpg" alt="wedding" id='wedding10' ></div>
-			<div class="item"><img src="photos/party1.jpg" alt="Green" id='party1' ></div>
-			<div class="item"><img src="photos/party2.jpg" alt="Green" id='party2' ></div>
-			<div class="item"><img src="photos/party3.jpg" alt="Green" id='party3' ></div>
-			<div class="item"><img src="photos/party4.jpg" alt="Green" id='party4' ></div>
-			<div class="item"><img src="photos/party5.jpg" alt="Green" id='party5' ></div>
-			<div class="item"><img src="photos/party6.jpg" alt="Green" id='party6' ></div>
-			<div class="item"><img src="photos/party7.jpg" alt="Green" id='party7' ></div>
-			<div class="item"><img src="photos/birthday1.jpg" alt="White" id='birthday1' ></div>
-			<div class="item"><img src="photos/birthday2.jpg" alt="White" id='birthday2' ></div>
-			<div class="item"><img src="photos/birthday3.jpg" alt="White" id='birthday3' ></div>
-			<div class="item"><img src="photos/birthday4.jpg" alt="White" id='birthday4' ></div>
-			<div class="item"><img src="photos/birthday5.jpg" alt="White" id='birthday5' ></div>
-			<div class="item"><img src="photos/birthday6.jpg" alt="White" id='birthday6' ></div>
-			<div class="item"><img src="photos/birthday7.jpg" alt="White" id='birthday7' ></div>
-			<div class="item"><img src="photos/birthday8.jpg" alt="White" id='birthday8' ></div>
-			<div class="item"><img src="photos/birthday9.jpg" alt="White" id='birthday9' ></div>
-			<div class="item"><img src="photos/birthday10.jpg" alt="White" id='birthday10' ></div>
-			<div class="item"><img src="photos/birthday11.jpg" alt="White" id='birthday11' ></div>
-			<div class="item"><img src="photos/birthday12.jpg" alt="White" id='birthday12' ></div>
-			<div class="item"><img src="photos/birthday13.jpg" alt="White" id='birthday13' ></div>
-			<div class="item"><img src="photos/birthday14.jpg" alt="White" id='birthday14' ></div>
-			<div class="item"><img src="photos/birthday15.jpg" alt="White" id='birthday15' ></div>
+			<div class="item wedding" id='wedding1'><img src="photos/wedding1.jpg" alt="wedding"></div>
+			<div class="item wedding" id='wedding2'><img src="photos/wedding2.jpg" alt="wedding"></div>
+			<div class="item wedding" id='wedding3'><img src="photos/wedding3.jpg" alt="wedding"></div>
+			<div class="item  wedding" id='wedding4'><img src="photos/wedding4.jpg" alt="wedding"></div>
+			<div class="item  wedding" id='wedding5'><img src="photos/wedding5.jpg" alt="wedding"></div>
+			<div class="item  wedding" id='wedding6'><img src="photos/wedding6.jpg" alt="wedding"></div>
+			<div class="item  wedding" id='wedding7'><img src="photos/wedding7.jpg" alt="wedding"></div>
+			<div class="item  wedding" id='wedding8'><img src="photos/wedding8.jpg" alt="wedding"></div>
+			<div class="item  wedding" id='wedding9'><img src="photos/wedding9.jpg" alt="wedding"></div>
+			<div class="item  wedding" id='wedding10'><img src="photos/wedding10.jpg" alt="wedding"></div>
+			<div class="item  party" id='party1'><img src="photos/party1.jpg" alt="party"></div>
+			<div class="item  party" id='party2'><img src="photos/party2.jpg" alt="party"></div>
+			<div class="item  party" id='party3'><img src="photos/party3.jpg" alt="party"></div>
+			<div class="item  party" id='party4'><img src="photos/party4.jpg" alt="party"></div>
+			<div class="item  party" id='party5'><img src="photos/party5.jpg" alt="party" ></div>
+			<div class="item party" id='party6'><img src="photos/party6.jpg" alt="party"></div>
+			<div class="item  party" id='party7'><img src="photos/party7.jpg" alt="party"></div>
+			<div class="item  birthday" id='birthday1'><img src="photos/birthday1.jpg" alt="birthday"></div>
+			<div class="item birthday" id='birthday2'><img src="photos/birthday2.jpg" alt="birthday"></div>
+			<div class="item  birthday" id='birthday3'><img src="photos/birthday3.jpg" alt="birthday"></div>
+			<div class="item  birthday" id='birthday4'><img src="photos/birthday4.jpg" alt="birthday"></div>
+			<div class="item  birthday" id='birthday5'><img src="photos/birthday5.jpg" alt="birthday"></div>
+			<div class="item  birthday" id='birthday6'><img src="photos/birthday6.jpg" alt="birthday"></div>
+			<div class="item birthday" id='birthday7'><img src="photos/birthday7.jpg" alt="birthday"></div>
+			<div class="item  birthday" id='birthday8'><img src="photos/birthday8.jpg" alt="birthday"></div>
+			<div class="item  birthday" id='birthday9'><img src="photos/birthday9.jpg" alt="birthday" ></div>
+			<div class="item  birthday" id='birthday10'><img src="photos/birthday10.jpg" alt="birthday"></div>
+			<div class="item birthday" id='birthday11'><img src="photos/birthday11.jpg" alt="birthday"></div>
+			<div class="item  birthday" id='birthday12'><img src="photos/birthday12.jpg" alt="birthday"></div>
+			<div class="item  birthday" id='birthday13'><img src="photos/birthday13.jpg" alt="birthday"></div>
+			<div class="item birthday" id='birthday14'><img src="photos/birthday14.jpg" alt="birthday"></div>
+			<div class="item  birthday" id='birthday15'><img src="photos/birthday15.jpg" alt="birthday"></div>
         </div>
   <!-- END Gallery -->
 	<!-- Content  -->
