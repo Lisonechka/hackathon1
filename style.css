@@ -137,3 +137,8 @@ img {
 .hide {
   display: none;
 }
+
+img:hover {
+  transform: scale(1.2);
+  -webkit-transition: transform 0.3s ease-in-out;
+}
